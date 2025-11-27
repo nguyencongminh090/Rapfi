@@ -1,0 +1,85 @@
+[1/4] Building CXX object CMakeFiles/rapfi.dir/game/board.cpp.obj
+FAILED: CMakeFiles/rapfi.dir/game/board.cpp.obj 
+C:\msys64\mingw64\bin\c++.exe -DCOMMAND_MODULES -DMULTI_THREADING -DUSE_AVX2 -DUSE_BMI2 -DUSE_SSE -ID:/C++/Rapfi/external/cpptoml/include -ID:/C++/Rapfi/external/cxxopts/include -ID:/C++/Rapfi/external/lz4/include -ID:/C++/Rapfi/external/simde/include -ID:/C++/Rapfi/external/flat.hpp/headers -ID:/C++/Rapfi/external/zip/src -ID:/C++/Rapfi/external/libnpy/include -ID:/C++/Rapfi/external/thread-pool/include -mavx2 -mfma -mbmi2 -Wall -Wno-unused-variable -Wno-unused-function -Wno-missing-braces -Wno-logical-op-parentheses -Wno-parentheses -Wno-sign-compare -O3 -DNDEBUG -std=gnu++17 -MD -MT CMakeFiles/rapfi.dir/game/board.cpp.obj -MF CMakeFiles\rapfi.dir\game\board.cpp.obj.d -o CMakeFiles/rapfi.dir/game/board.cpp.obj -c D:/C++/Rapfi/game/board.cpp
+D:/C++/Rapfi/game/board.cpp: In member function 'void Board::expandCandArea(Rule, Pos, int, int)':
+D:/C++/Rapfi/game/board.cpp:1140:10: warning: enumeration value 'RULE_NB' not handled in switch [-Wswitch]
+ 1140 |   switch (rule) {
+      |          ^
+D:/C++/Rapfi/game/board.cpp: At global scope:
+D:/C++/Rapfi/game/board.cpp:1311:22: error: redefinition of 'uint64_t Board::getKeyAt(Pos, int) const [with Rule R = WRAP_1D; uint64_t = long long unsigned int]'
+ 1311 | template <> uint64_t Board::getKeyAt<WRAP_1D>(Pos pos, int dir) const {
+      |                      ^~~~~
+D:/C++/Rapfi/game/board.cpp:412:29: note: 'uint64_t Board::getKeyAt(Pos, int) const [with Rule R = WRAP_1D; uint64_t = long long unsigned int]' previously declared here
+  412 | template <> inline uint64_t Board::getKeyAt<WRAP_1D>(Pos pos, int dir) const {
+      |                             ^~~~~
+D:/C++/Rapfi/game/board.cpp: In member function 'void Board::newGame() [with Rule R = WRAP_1D]':
+D:/C++/Rapfi/game/board.cpp:1333:14: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct StateInfo'; use assignment or value-initialization instead [-Wclass-memaccess]
+ 1333 |   std::memset(&stateInfos[0], 0, sizeof(StateInfo));
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from D:/C++/Rapfi/game/board.cpp:19:
+D:/C++/Rapfi/game/board.h:77:8: note: 'struct StateInfo' declared here
+   77 | struct StateInfo {
+      |        ^~~~~~~~~
+D:/C++/Rapfi/game/board.cpp:1341:17: error: 'class Evaluation::Evaluator' has no member named 'initialState'
+ 1341 |     evaluator_->initialState(*this);
+      |                 ^~~~~~~~~~~~
+D:/C++/Rapfi/game/board.cpp: At global scope:
+D:/C++/Rapfi/game/board.cpp:1344:18: error: redefinition of 'void Board::move(Pos) [with Rule R = WRAP_1D; MoveType MT = Board::MoveType::NORMAL]'
+ 1344 | template <> void Board::move<WRAP_1D, Board::MoveType::NORMAL>(Pos pos) {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:452:18: note: 'void Board::move(Pos) [with Rule R = WRAP_1D; MoveType MT = Board::MoveType::NORMAL]' previously declared here
+  452 | template <> void Board::move<WRAP_1D, Board::MoveType::NORMAL>(Pos pos) {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:1406:18: error: redefinition of 'void Board::move(Pos) [with Rule R = WRAP_1D; MoveType MT = Board::MoveType::NO_EVAL]'
+ 1406 | template <> void Board::move<WRAP_1D, Board::MoveType::NO_EVAL>(Pos pos) {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:565:18: note: 'void Board::move(Pos) [with Rule R = WRAP_1D; MoveType MT = Board::MoveType::NO_EVAL]' previously declared here
+  565 | template <> void Board::move<WRAP_1D, Board::MoveType::NO_EVAL>(Pos pos) {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:1410:18: error: redefinition of 'void Board::undo() [with Rule R = WRAP_1D; MoveType MT = Board::MoveType::NORMAL]'
+ 1410 | template <> void Board::undo<WRAP_1D, Board::MoveType::NORMAL>() {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:655:18: note: 'void Board::undo() [with Rule R = WRAP_1D; MoveType MT = Board::MoveType::NORMAL]' previously declared here
+  655 | template <> void Board::undo<WRAP_1D, Board::MoveType::NORMAL>() {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:1461:18: error: redefinition of 'void Board::undo() [with Rule R = WRAP_1D; MoveType MT = Board::MoveType::NO_EVAL]'
+ 1461 | template <> void Board::undo<WRAP_1D, Board::MoveType::NO_EVAL>() {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:726:18: note: 'void Board::undo() [with Rule R = WRAP_1D; MoveType MT = Board::MoveType::NO_EVAL]' previously declared here
+  726 | template <> void Board::undo<WRAP_1D, Board::MoveType::NO_EVAL>() {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:1465:18: error: redefinition of 'void Board::setBlock(Pos) [with Rule R = WRAP_1D]'
+ 1465 | template <> void Board::setBlock<WRAP_1D>(Pos pos) {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp:788:18: note: 'void Board::setBlock(Pos) [with Rule R = WRAP_1D]' previously declared here
+  788 | template <> void Board::setBlock<WRAP_1D>(Pos pos) {
+      |                  ^~~~~
+D:/C++/Rapfi/game/board.cpp: In instantiation of 'void Board::newGame() [with Rule R = FREESTYLE]':
+D:/C++/Rapfi/game/board.h:435:27:   required from here
+  435 |   void (Board::*F[])() = {&Board::newGame<FREESTYLE>, &Board::newGame<STANDARD>,
+D:/C++/Rapfi/game/board.cpp:152:14: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct StateInfo'; use assignment or value-initialization instead [-Wclass-memaccess]
+  152 |   std::memset(&st, 0, sizeof(StateInfo));
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/C++/Rapfi/game/board.h:77:8: note: 'struct StateInfo' declared here
+   77 | struct StateInfo {
+      |        ^~~~~~~~~
+D:/C++/Rapfi/game/board.cpp: In instantiation of 'void Board::newGame() [with Rule R = STANDARD]':
+D:/C++/Rapfi/game/board.h:435:55:   required from here
+  435 |   void (Board::*F[])() = {&Board::newGame<FREESTYLE>, &Board::newGame<STANDARD>,
+D:/C++/Rapfi/game/board.cpp:152:14: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct StateInfo'; use assignment or value-initialization instead [-Wclass-memaccess]
+  152 |   std::memset(&st, 0, sizeof(StateInfo));
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/C++/Rapfi/game/board.h:77:8: note: 'struct StateInfo' declared here
+   77 | struct StateInfo {
+      |        ^~~~~~~~~
+D:/C++/Rapfi/game/board.cpp: In instantiation of 'void Board::newGame() [with Rule R = RENJU]':
+D:/C++/Rapfi/game/board.h:436:27:   required from here
+  436 |                           &Board::newGame<RENJU>, &Board::newGame<WRAP_1D>};
+D:/C++/Rapfi/game/board.cpp:152:14: warning: 'void* memset(void*, int, size_t)' clearing an object of non-trivial type 'struct StateInfo'; use assignment or value-initialization instead [-Wclass-memaccess]
+  152 |   std::memset(&st, 0, sizeof(StateInfo));
+      |   ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/C++/Rapfi/game/board.h:77:8: note: 'struct StateInfo' declared here
+   77 | struct StateInfo {
+      |        ^~~~~~~~~
+cc1plus.exe: note: unrecognized command-line option '-Wno-logical-op-parentheses' may have been intended to silence earlier diagnostics
+ninja: build stopped: subcommand failed.

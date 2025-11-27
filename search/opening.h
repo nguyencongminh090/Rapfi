@@ -25,7 +25,8 @@
 namespace Opening {
 
 /// Try to probe a opening according to the certain rule.
-/// @param[inout] board Board state to probe a opening move. New move(s) will be put on board.
+/// @param[inout] board Board state to probe a opening move. New move(s) will be
+/// put on board.
 /// @param[in] rule The rule including game rule and opening rule.
 /// @param[out] action The result action of probed opening.
 /// @param[out] move The generated move.
@@ -38,11 +39,11 @@ ActionType decideAction(const Board &board, GameRule rule, Value bestValue);
 
 /// Check if there are any moves near border and expands board candidate
 /// area for those moves.
-void expandCandidate(Board &board);
+void expandCandidate(Board &board, Rule rule);
 
 /// Expand half of the board as candidates. Used to find balance move
 /// when the board is empty.
-void expandCandidateHalfBoard(Board &board);
+void expandCandidateHalfBoard(Board &board, Rule rule);
 
 /// Check if the board is symmetry under the given transform.
 bool isBoardSymmetry(const Board &board, TransformType symTrans);
@@ -51,34 +52,33 @@ bool isBoardSymmetry(const Board &board, TransformType symTrans);
 void filterSymmetryMoves(const Board &board, std::vector<Pos> &moveList);
 
 /// OpeningGenConfig struct contains information on how to generate a opening.
-struct OpeningGenConfig
-{
-    // How many moves one opening can have (0 < minMoves < maxMoves)
-    int minMoves = 2, maxMoves = 10;
+struct OpeningGenConfig {
+  // How many moves one opening can have (0 < minMoves < maxMoves)
+  int minMoves = 2, maxMoves = 10;
 
-    // Randomly picked moves are chosen inside a local square with size
-    // of [localSizeMin, localSizeMax]
-    int localSizeMin = 4, localSizeMax = 6;
+  // Randomly picked moves are chosen inside a local square with size
+  // of [localSizeMin, localSizeMax]
+  int localSizeMin = 4, localSizeMax = 6;
 
-    // Find a balanced opening using search time limit of balanceNodes.
-    // If it is 0, then the generated openings will not be balanced.
-    uint64_t balance1Nodes = 1000000;
+  // Find a balanced opening using search time limit of balanceNodes.
+  // If it is 0, then the generated openings will not be balanced.
+  uint64_t balance1Nodes = 1000000;
 
-    // Use how many nodes to fast check if this position is balanceable.
-    uint64_t balance1FastCheckNodes = 100000;
+  // Use how many nodes to fast check if this position is balanceable.
+  uint64_t balance1FastCheckNodes = 100000;
 
-    // When BALANCE1 is not able to find a balanced move, use how many
-    // extra nodes to find a balanced move pair in BALANCE2.
-    uint64_t balance2Nodes = 2500000;
+  // When BALANCE1 is not able to find a balanced move, use how many
+  // extra nodes to find a balanced move pair in BALANCE2.
+  uint64_t balance2Nodes = 2500000;
 
-    // Eval in [-balanceWindow, balanceWindow] is considered as balanced
-    // When we can not achieve a eval inside balance window using BALANCE1,
-    // BALANCE2 is tried instead;
-    Value balanceWindow = Value(50);
+  // Eval in [-balanceWindow, balanceWindow] is considered as balanced
+  // When we can not achieve a eval inside balance window using BALANCE1,
+  // BALANCE2 is tried instead;
+  Value balanceWindow = Value(50);
 
-    // Consider this position as unbalanceable if its initial search value
-    // falls outside this window.
-    Value balance1FastCheckWindow = Value(120);
+  // Consider this position as unbalanceable if its initial search value
+  // falls outside this window.
+  Value balance1FastCheckWindow = Value(120);
 };
 
 /// OpeningGenerator class generates various (balanced) random opening using
@@ -86,25 +86,25 @@ struct OpeningGenConfig
 /// the first is to randomly put moves on a random local rectangle area on
 /// board, the second is to try put one/two balance move(s) which makes it
 /// giving the most balanced eval within the limited search time.
-class OpeningGenerator
-{
+class OpeningGenerator {
 public:
-    OpeningGenerator(int boardSize, Rule rule, OpeningGenConfig config = {}, PRNG prng = {});
+  OpeningGenerator(int boardSize, Rule rule, OpeningGenConfig config = {},
+                   PRNG prng = {});
 
-    const Board &getBoard() const { return board; }
-    std::string  positionString() const { return board.positionString(); }
-    bool         next();
+  const Board &getBoard() const { return board; }
+  std::string positionString() const { return board.positionString(); }
+  bool next();
 
 private:
-    Board            board;
-    Rule             rule;
-    OpeningGenConfig config;
-    PRNG             prng;
-    std::vector<int> numMoveChoices;
+  Board board;
+  Rule rule;
+  OpeningGenConfig config;
+  PRNG prng;
+  std::vector<int> numMoveChoices;
 
-    void putRandomMoves(int numMoves, CandArea area);
-    bool putBalance1Move();
-    bool putBalance2Move();
+  void putRandomMoves(int numMoves, CandArea area);
+  bool putBalance1Move();
+  bool putBalance2Move();
 };
 
-}  // namespace Opening
+} // namespace Opening
