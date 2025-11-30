@@ -92,6 +92,10 @@ MovePicker::MovePicker(Rule rule, const Board &board, ExtraArgs<MovePicker::ROOT
     : board(board)
     , mainHistory(nullptr)
     , counterMoveHistory(nullptr)
+    , continuationHistory(nullptr)
+    , continuationHistory1Ply(nullptr)
+    , prevMove(Pos::NONE)
+    , prevMoveOpp(Pos::NONE)
     , stage(ALLMOVES)
     , rule(rule)
     , ttMove(Pos::NONE)
@@ -157,6 +161,10 @@ MovePicker::MovePicker(Rule rule, const Board &board, ExtraArgs<MovePicker::MAIN
     : board(board)
     , mainHistory(args.mainHistory)
     , counterMoveHistory(args.counterMoveHistory)
+    , continuationHistory(args.continuationHistory)
+    , continuationHistory1Ply(args.continuationHistory1Ply)
+    , prevMove(args.prevMove)
+    , prevMoveOpp(args.prevMoveOpp)
     , rule(rule)
     , allowPlainB4InVCF(false)
     , hasPolicy(false)
@@ -199,6 +207,10 @@ template <>
 MovePicker::MovePicker(Rule rule, const Board &board, ExtraArgs<MovePicker::QVCF> args)
     : board(board)
     , mainHistory(nullptr)
+    , continuationHistory(nullptr)
+    , continuationHistory1Ply(nullptr)
+    , prevMove(Pos::NONE)
+    , prevMoveOpp(Pos::NONE)
     , rule(rule)
     , allowPlainB4InVCF(
           args.depth >= DEPTH_QVCF_FULL
@@ -315,6 +327,16 @@ void MovePicker::scoreAllMoves()
             }
         }
 
+        if (bool(Type & CONTINUATION_HISTORY) && continuationHistory && board.isInBoard(prevMove)) {
+            m.score += (*continuationHistory)[self][prevMove][m.pos] / 256;
+        }
+
+        if (bool(Type & CONTINUATION_HISTORY_1PLY) && continuationHistory1Ply && board.isInBoard(prevMoveOpp)) {
+            m.score += (*continuationHistory1Ply)[self][prevMoveOpp][m.pos] / 256;
+        }
+
+
+
         maxScore = std::max(maxScore, m.score);
     }
 
@@ -366,7 +388,7 @@ top:
             fastPartialSort(curMove, endMove, 0, ScoredMove::PolicyComparator {});
         }
         else {
-            scoreAllMoves<ScoreType(BALANCED | POLICY | MAIN_HISTORY | COUNTER_MOVE)>();
+            scoreAllMoves<ScoreType(BALANCED | POLICY | MAIN_HISTORY | COUNTER_MOVE | CONTINUATION_HISTORY | CONTINUATION_HISTORY_1PLY)>();
             fastPartialSort(curMove, endMove, 0, ScoredMove::ScoreComparator {});
         }
 
@@ -398,7 +420,7 @@ top:
             fastPartialSort(curMove, endMove, 0, ScoredMove::PolicyComparator {});
         }
         else {
-            scoreAllMoves<ScoreType(BALANCED | POLICY | MAIN_HISTORY)>();
+            scoreAllMoves<ScoreType(BALANCED | POLICY | MAIN_HISTORY | CONTINUATION_HISTORY | CONTINUATION_HISTORY_1PLY)>();
             fastPartialSort(curMove, endMove, 0, ScoredMove::ScoreComparator {});
         }
 
@@ -428,7 +450,7 @@ top:
             fastPartialSort(curMove, endMove, 0, ScoredMove::PolicyComparator {});
         }
         else {
-            scoreAllMoves<ScoreType(BALANCED | POLICY | MAIN_HISTORY)>();
+            scoreAllMoves<ScoreType(BALANCED | POLICY | MAIN_HISTORY | CONTINUATION_HISTORY | CONTINUATION_HISTORY_1PLY)>();
             fastPartialSort(curMove, endMove, 0, ScoredMove::ScoreComparator {});
         }
 

@@ -43,6 +43,8 @@ struct ABSearchData : SearchData
 
     MainHistory        mainHistory;         /// Heuristic history table
     CounterMoveHistory counterMoveHistory;  /// Counter move history table
+    ContinuationHistory continuationHistory; /// Continuation history table (2-ply)
+    ContinuationHistory1Ply continuationHistory1Ply; /// Continuation history table (1-ply)
 
     ~ABSearchData() = default;
 

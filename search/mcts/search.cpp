@@ -420,6 +420,10 @@ bool expandNode(Node &node, const SearchOptions &options, const Board &board, in
                           Pos::NONE,
                           nullptr,
                           nullptr,
+                          nullptr,
+                          nullptr,
+                          Pos::NONE,
+                          Pos::NONE,
                           true,
                           PolicyTemperature,
                       });

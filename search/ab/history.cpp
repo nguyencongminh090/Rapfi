@@ -108,6 +108,18 @@ void HistoryTracker::updateQuietStats(Pos move, int bonus)
 
     searchData->mainHistory[self][move][HIST_QUIET] << bonus;
     searchStack->setKiller(move);  // Update killer heruistic move
+
+    // Update continuation history (2-ply)
+    Pos prevMove = (searchStack - 2)->currentMove;
+    if (board.isInBoard(prevMove)) {
+        searchData->continuationHistory[self][prevMove][move] << bonus;
+    }
+
+    // Update continuation history (1-ply)
+    Pos prevMoveOpp = (searchStack - 1)->currentMove;
+    if (board.isInBoard(prevMoveOpp)) {
+        searchData->continuationHistory1Ply[self][prevMoveOpp][move] << bonus;
+    }
 }
 
 }  // namespace Search::AB

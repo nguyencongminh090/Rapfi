@@ -1,0 +1,264 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "external/cpptoml",
+					"jsonFile" : "directory-external.cpptoml-Release-58c7f0dd50528bd375e5.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/cpptoml"
+				},
+				{
+					"build" : "external/cxxopts",
+					"jsonFile" : "directory-external.cxxopts-Release-a007b3cf1abb836d93ec.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "external/cxxopts"
+				},
+				{
+					"build" : "external/lz4",
+					"jsonFile" : "directory-external.lz4-Release-c314401e95a70c1ca919.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "external/lz4",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "external/simde",
+					"jsonFile" : "directory-external.simde-Release-e224299911c4cd52f0a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "external/simde"
+				},
+				{
+					"build" : "external/flat.hpp",
+					"jsonFile" : "directory-external.flat.hpp-Release-5dfdaa7fcf3de331538b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 5,
+					"source" : "external/flat.hpp"
+				},
+				{
+					"build" : "external/zip",
+					"jsonFile" : "directory-external.zip-Release-5bec70c44185eaa1e005.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 6,
+					"source" : "external/zip",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "external/libnpy",
+					"jsonFile" : "directory-external.libnpy-Release-4dfd10bd1f00c116e05d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "external/libnpy"
+				},
+				{
+					"build" : "external/thread-pool",
+					"jsonFile" : "directory-external.thread-pool-Release-88d6da2b92b6a97685af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "external/thread-pool"
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "rapfi",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "cpptoml",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "cxxopts",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "lz4",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "simde",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "flat.hpp",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "zip",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7
+					],
+					"name" : "libnpy",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						8
+					],
+					"name" : "BS_thread_pool",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "lz4::@5034d83536e62844b9cd",
+					"jsonFile" : "target-lz4-Release-bc33fc001b2fe0705b91.json",
+					"name" : "lz4",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rapfi::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rapfi-Release-78ec960ab1546aa89646.json",
+					"name" : "rapfi",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "zip::@54eb83aa268fb5490d05",
+					"jsonFile" : "target-zip-Release-e2fda41ca9ad7d6afb2c.json",
+					"name" : "zip",
+					"projectIndex" : 6
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/C++/Rapfi/build/x64-clang-AVX2",
+		"source" : "D:/C++/Rapfi"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}

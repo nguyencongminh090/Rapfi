@@ -1,0 +1,865 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/msys64/mingw64/bin/clang.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
+      
+      The C compiler identification is Clang, found in:
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/4.0.2/CompilerIdC/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/msys64/mingw64/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/4.0.2/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnai13"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnai13"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnai13'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_c4f0d
+        [1/2] C:\\msys64\\mingw64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_c4f0d.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
+        clang version 20.1.5
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/msys64/mingw64/bin
+         (in-process)
+         "C:/msys64/mingw64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnai13 -v -fcoverage-compilation-dir=D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnai13 -resource-dir C:/msys64/mingw64/lib/clang/20 -dependency-file "CMakeFiles\\\\cmTC_c4f0d.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/mingw64/lib/clang/20/include -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/mingw64/include -ferror-limit 19 -femulated-tls -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 20.1.5 based upon LLVM 20.1.5 default target x86_64-w64-windows-gnu\x0d
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include"\x0d
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/usr/include"\x0d
+        #include "..." search starts here:\x0d
+        #include <...> search starts here:\x0d
+         C:/msys64/mingw64/lib/clang/20/include\x0d
+         C:/msys64/mingw64/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\clang.exe  -v -Wl,-v CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -o cmTC_c4f0d.exe -Wl,--out-implib,libcmTC_c4f0d.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 20.1.5
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/msys64/mingw64/bin
+         "C:/msys64/mingw64/bin/ld" -m i386pep -Bdynamic -o cmTC_c4f0d.exe C:/msys64/mingw64/lib/crt2.o C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o -LC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0 -LC:/msys64/mingw64/x86_64-w64-mingw32/lib -LC:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/mingw64/lib -v CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_c4f0d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o\x0d
+        GNU ld (GNU Binutils) 2.44\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/msys64/mingw64/lib/clang/20/include]
+          add: [C:/msys64/mingw64/include]
+        end of search list found
+        collapse include dir [C:/msys64/mingw64/lib/clang/20/include] ==> [C:/msys64/mingw64/lib/clang/20/include]
+        collapse include dir [C:/msys64/mingw64/include] ==> [C:/msys64/mingw64/include]
+        implicit include dirs: [C:/msys64/mingw64/lib/clang/20/include;C:/msys64/mingw64/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnai13']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_c4f0d]
+        ignore line: [[1/2] C:\\msys64\\mingw64\\bin\\clang.exe   -v -MD -MT CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -MF CMakeFiles\\cmTC_c4f0d.dir\\CMakeCCompilerABI.c.obj.d -o CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang version 20.1.5]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/msys64/mingw64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "C:/msys64/mingw64/bin/clang.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnai13 -v -fcoverage-compilation-dir=D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnai13 -resource-dir C:/msys64/mingw64/lib/clang/20 -dependency-file "CMakeFiles\\\\cmTC_c4f0d.dir\\\\CMakeCCompilerABI.c.obj.d" -MT CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -sys-header-deps -internal-isystem C:/msys64/mingw64/lib/clang/20/include -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/mingw64/include -ferror-limit 19 -femulated-tls -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -exception-model=seh -faddrsig -o CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -x c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 20.1.5 based upon LLVM 20.1.5 default target x86_64-w64-windows-gnu\x0d]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include"\x0d]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/usr/include"\x0d]
+        ignore line: [#include "..." search starts here:\x0d]
+        ignore line: [#include <...> search starts here:\x0d]
+        ignore line: [ C:/msys64/mingw64/lib/clang/20/include\x0d]
+        ignore line: [ C:/msys64/mingw64/include\x0d]
+        ignore line: [End of search list.\x0d]
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\clang.exe  -v -Wl -v CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj -o cmTC_c4f0d.exe -Wl --out-implib libcmTC_c4f0d.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [clang version 20.1.5]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/msys64/mingw64/bin]
+        link line: [ "C:/msys64/mingw64/bin/ld" -m i386pep -Bdynamic -o cmTC_c4f0d.exe C:/msys64/mingw64/lib/crt2.o C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o -LC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0 -LC:/msys64/mingw64/x86_64-w64-mingw32/lib -LC:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/mingw64/lib -v CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_c4f0d.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o\x0d]
+          arg [C:/msys64/mingw64/bin/ld] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_c4f0d.exe] ==> ignore
+          arg [C:/msys64/mingw64/lib/crt2.o] ==> obj [C:/msys64/mingw64/lib/crt2.o]
+          arg [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o] ==> obj [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o]
+          arg [-LC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0] ==> dir [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0]
+          arg [-LC:/msys64/mingw64/x86_64-w64-mingw32/lib] ==> dir [C:/msys64/mingw64/x86_64-w64-mingw32/lib]
+          arg [-LC:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib] ==> dir [C:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib]
+          arg [-LC:/msys64/mingw64/lib] ==> dir [C:/msys64/mingw64/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_c4f0d.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_c4f0d.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lgcc_eh] ==> lib [gcc_eh]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o] ==> obj [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o]
+        linker tool for 'C': C:/msys64/mingw64/bin/ld
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        remove lib [gcc_eh]
+        remove lib [msvcrt]
+        collapse library dir [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0] ==> [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0]
+        collapse library dir [C:/msys64/mingw64/x86_64-w64-mingw32/lib] ==> [C:/msys64/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib] ==> [C:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib]
+        collapse library dir [C:/msys64/mingw64/lib] ==> [C:/msys64/mingw64/lib]
+        implicit libs: [mingw32;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/msys64/mingw64/lib/crt2.o;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o]
+        implicit dirs: [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0;C:/msys64/mingw64/x86_64-w64-mingw32/lib;C:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib;C:/msys64/mingw64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/msys64/mingw64/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-wdmyxz"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-wdmyxz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-wdmyxz'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_61b3f
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe   -v -MD -MT CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_61b3f.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 20.1.5
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/msys64/mingw64/bin
+         (in-process)
+         "C:/msys64/mingw64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-wdmyxz -v -fcoverage-compilation-dir=D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-wdmyxz -resource-dir C:/msys64/mingw64/lib/clang/20 -dependency-file "CMakeFiles\\\\cmTC_61b3f.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++ -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/backward -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0 -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0/backward -internal-isystem C:/msys64/mingw64/include/c++/15.1.0 -internal-isystem C:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/include/c++/15.1.0/backward -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++ -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/backward -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0/backward -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1/backward -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15/backward -internal-isystem C:/msys64/mingw64/lib/clang/20/include -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/mingw64/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 20.1.5 based upon LLVM 20.1.5 default target x86_64-w64-windows-gnu
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++"
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/backward"
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0"
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0/backward"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/backward"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0/backward"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1/backward"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15/x86_64-w64-mingw32"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15/backward"
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include"
+        ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/msys64/mingw64/include/c++/15.1.0\x0d
+         C:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32\x0d
+         C:/msys64/mingw64/include/c++/15.1.0/backward\x0d
+         C:/msys64/mingw64/lib/clang/20/include\x0d
+         C:/msys64/mingw64/include\x0d
+        End of search list.\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\clang++.exe  -v -Wl,-v CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_61b3f.exe -Wl,--out-implib,libcmTC_61b3f.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        clang version 20.1.5
+        Target: x86_64-w64-windows-gnu
+        Thread model: posix
+        InstalledDir: C:/msys64/mingw64/bin
+         "C:/msys64/mingw64/bin/ld" -m i386pep -Bdynamic -o cmTC_61b3f.exe C:/msys64/mingw64/lib/crt2.o C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o -LC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0 -LC:/msys64/mingw64/x86_64-w64-mingw32/lib -LC:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/mingw64/lib -v CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_61b3f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o\x0d
+        GNU ld (GNU Binutils) 2.44\x0d
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/msys64/mingw64/include/c++/15.1.0]
+          add: [C:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32]
+          add: [C:/msys64/mingw64/include/c++/15.1.0/backward]
+          add: [C:/msys64/mingw64/lib/clang/20/include]
+          add: [C:/msys64/mingw64/include]
+        end of search list found
+        collapse include dir [C:/msys64/mingw64/include/c++/15.1.0] ==> [C:/msys64/mingw64/include/c++/15.1.0]
+        collapse include dir [C:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32] ==> [C:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32]
+        collapse include dir [C:/msys64/mingw64/include/c++/15.1.0/backward] ==> [C:/msys64/mingw64/include/c++/15.1.0/backward]
+        collapse include dir [C:/msys64/mingw64/lib/clang/20/include] ==> [C:/msys64/mingw64/lib/clang/20/include]
+        collapse include dir [C:/msys64/mingw64/include] ==> [C:/msys64/mingw64/include]
+        implicit include dirs: [C:/msys64/mingw64/include/c++/15.1.0;C:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32;C:/msys64/mingw64/include/c++/15.1.0/backward;C:/msys64/mingw64/lib/clang/20/include;C:/msys64/mingw64/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-wdmyxz']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_61b3f]
+        ignore line: [[1/2] C:\\msys64\\mingw64\\bin\\clang++.exe   -v -MD -MT CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_61b3f.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 20.1.5]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/msys64/mingw64/bin]
+        ignore line: [ (in-process)]
+        ignore line: [ "C:/msys64/mingw64/bin/clang++.exe" -cc1 -triple x86_64-w64-windows-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=none -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -mms-bitfields -funwind-tables=2 -fno-sized-deallocation -fno-use-init-array -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-wdmyxz -v -fcoverage-compilation-dir=D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-wdmyxz -resource-dir C:/msys64/mingw64/lib/clang/20 -dependency-file "CMakeFiles\\\\cmTC_61b3f.dir\\\\CMakeCXXCompilerABI.cpp.obj.d" -MT CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -sys-header-deps -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++ -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/backward -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0 -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0/backward -internal-isystem C:/msys64/mingw64/include/c++/15.1.0 -internal-isystem C:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/include/c++/15.1.0/backward -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++ -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/backward -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0/backward -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1/backward -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15/x86_64-w64-mingw32 -internal-isystem C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15/backward -internal-isystem C:/msys64/mingw64/lib/clang/20/include -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/include -internal-isystem C:/msys64/mingw64/x86_64-w64-mingw32/usr/include -internal-isystem C:/msys64/mingw64/include -fdeprecated-macro -ferror-limit 19 -femulated-tls -fno-use-cxa-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -exception-model=seh -faddrsig -o CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -x c++ C:/msys64/mingw64/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 20.1.5 based upon LLVM 20.1.5 default target x86_64-w64-windows-gnu]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include/c++/15.1.0/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/c++/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1.0/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15.1/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15/x86_64-w64-mingw32"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/include/g++-v15/backward"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/include"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/x86_64-w64-mingw32/usr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/msys64/mingw64/include/c++/15.1.0\x0d]
+        ignore line: [ C:/msys64/mingw64/include/c++/15.1.0/x86_64-w64-mingw32\x0d]
+        ignore line: [ C:/msys64/mingw64/include/c++/15.1.0/backward\x0d]
+        ignore line: [ C:/msys64/mingw64/lib/clang/20/include\x0d]
+        ignore line: [ C:/msys64/mingw64/include\x0d]
+        ignore line: [End of search list.\x0d]
+        ignore line: [[2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\clang++.exe  -v -Wl -v CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_61b3f.exe -Wl --out-implib libcmTC_61b3f.dll.a -Wl --major-image-version 0 --minor-image-version 0   && cd ."]
+        ignore line: [clang version 20.1.5]
+        ignore line: [Target: x86_64-w64-windows-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:/msys64/mingw64/bin]
+        link line: [ "C:/msys64/mingw64/bin/ld" -m i386pep -Bdynamic -o cmTC_61b3f.exe C:/msys64/mingw64/lib/crt2.o C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o -LC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0 -LC:/msys64/mingw64/x86_64-w64-mingw32/lib -LC:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib -LC:/msys64/mingw64/lib -v CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj --out-implib libcmTC_61b3f.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lkernel32 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o\x0d]
+          arg [C:/msys64/mingw64/bin/ld] ==> ignore
+          arg [-m] ==> ignore
+          arg [i386pep] ==> ignore
+          arg [-Bdynamic] ==> search dynamic
+          arg [-o] ==> ignore
+          arg [cmTC_61b3f.exe] ==> ignore
+          arg [C:/msys64/mingw64/lib/crt2.o] ==> obj [C:/msys64/mingw64/lib/crt2.o]
+          arg [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o] ==> obj [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o]
+          arg [-LC:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0] ==> dir [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0]
+          arg [-LC:/msys64/mingw64/x86_64-w64-mingw32/lib] ==> dir [C:/msys64/mingw64/x86_64-w64-mingw32/lib]
+          arg [-LC:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib] ==> dir [C:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib]
+          arg [-LC:/msys64/mingw64/lib] ==> dir [C:/msys64/mingw64/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_61b3f.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [--out-implib] ==> ignore
+          arg [libcmTC_61b3f.dll.a] ==> ignore
+          arg [--major-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [--minor-image-version] ==> ignore
+          arg [0] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ladvapi32] ==> lib [advapi32]
+          arg [-lshell32] ==> lib [shell32]
+          arg [-luser32] ==> lib [user32]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [-lmingw32] ==> lib [mingw32]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lmoldname] ==> lib [moldname]
+          arg [-lmingwex] ==> lib [mingwex]
+          arg [-lmsvcrt] ==> lib [msvcrt]
+          arg [-lkernel32] ==> lib [kernel32]
+          arg [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o] ==> obj [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o]
+        linker tool for 'CXX': C:/msys64/mingw64/bin/ld
+        remove lib [msvcrt]
+        remove lib [msvcrt]
+        collapse library dir [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0] ==> [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0]
+        collapse library dir [C:/msys64/mingw64/x86_64-w64-mingw32/lib] ==> [C:/msys64/mingw64/x86_64-w64-mingw32/lib]
+        collapse library dir [C:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib] ==> [C:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib]
+        collapse library dir [C:/msys64/mingw64/lib] ==> [C:/msys64/mingw64/lib]
+        implicit libs: [stdc++;mingw32;gcc_s;gcc;moldname;mingwex;pthread;advapi32;shell32;user32;kernel32;mingw32;gcc_s;gcc;moldname;mingwex;kernel32]
+        implicit objs: [C:/msys64/mingw64/lib/crt2.o;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtbegin.o;C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0/crtend.o]
+        implicit dirs: [C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.1.0;C:/msys64/mingw64/x86_64-w64-mingw32/lib;C:/msys64/mingw64/x86_64-w64-mingw32/mingw/lib;C:/msys64/mingw64/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:270 (cmake_determine_linker_id)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/msys64/mingw64/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:34 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-obtkqp"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-obtkqp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_SSE"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-obtkqp'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_89fe8
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_SSE  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_89fe8.dir/src.cxx.obj -MF CMakeFiles\\cmTC_89fe8.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_89fe8.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-obtkqp/src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\clang++.exe -march=native  CMakeFiles/cmTC_89fe8.dir/src.cxx.obj -o cmTC_89fe8.exe -Wl,--out-implib,libcmTC_89fe8.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:38 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-92qlxs"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-92qlxs"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_AVX2"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-92qlxs'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_24b26
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_AVX2  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_24b26.dir/src.cxx.obj -MF CMakeFiles\\cmTC_24b26.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_24b26.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-92qlxs/src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\clang++.exe -march=native  CMakeFiles/cmTC_24b26.dir/src.cxx.obj -o cmTC_24b26.exe -Wl,--out-implib,libcmTC_24b26.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:42 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-pu94rr"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-pu94rr"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_AVX512"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-pu94rr'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_79260
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_AVX512  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_79260.dir/src.cxx.obj -MF CMakeFiles\\cmTC_79260.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_79260.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-pu94rr/src.cxx
+        FAILED: CMakeFiles/cmTC_79260.dir/src.cxx.obj 
+        C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_AVX512  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_79260.dir/src.cxx.obj -MF CMakeFiles\\cmTC_79260.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_79260.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-pu94rr/src.cxx
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-pu94rr/src.cxx:3:33: error: always_inline function '_mm512_setzero_si512' requires target feature 'avx512f', but would be inlined into function 'main' that is compiled without support for 'avx512f'\x0d
+            3 |         int main(){ __m512i a = _mm512_setzero_si512(); (void)a; return 0; }\x0d
+              |                                 ^\x0d
+        1 error generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:46 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-eufpg0"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-eufpg0"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_BMI2"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-eufpg0'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_f37f7
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_BMI2  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_f37f7.dir/src.cxx.obj -MF CMakeFiles\\cmTC_f37f7.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_f37f7.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-eufpg0/src.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\clang++.exe -march=native  CMakeFiles/cmTC_f37f7.dir/src.cxx.obj -o cmTC_f37f7.exe -Wl,--out-implib,libcmTC_f37f7.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:50 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-r490kv"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-r490kv"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_AVX512_VNNI"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-r490kv'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_d0dc3
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_AVX512_VNNI  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_d0dc3.dir/src.cxx.obj -MF CMakeFiles\\cmTC_d0dc3.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_d0dc3.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-r490kv/src.cxx
+        FAILED: CMakeFiles/cmTC_d0dc3.dir/src.cxx.obj 
+        C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_AVX512_VNNI  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_d0dc3.dir/src.cxx.obj -MF CMakeFiles\\cmTC_d0dc3.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_d0dc3.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-r490kv/src.cxx
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-r490kv/src.cxx:4:25: error: always_inline function '_mm512_setzero_si512' requires target feature 'avx512f', but would be inlined into function 'main' that is compiled without support for 'avx512f'
+            4 |             __m512i z = _mm512_setzero_si512();
+              |                         ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-r490kv/src.cxx:5:25: error: always_inline function '_mm512_dpbusd_epi32' requires target feature 'avx512vnni', but would be inlined into function 'main' that is compiled without support for 'avx512vnni'
+            5 |             __m512i r = _mm512_dpbusd_epi32(z, z, z);\x0d
+              |                         ^\x0d
+        2 errors generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:58 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-fbx3o2"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-fbx3o2"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_AVX_VNNI"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-fbx3o2'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_c9b90
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_AVX_VNNI  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_c9b90.dir/src.cxx.obj -MF CMakeFiles\\cmTC_c9b90.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_c9b90.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-fbx3o2/src.cxx
+        FAILED: CMakeFiles/cmTC_c9b90.dir/src.cxx.obj 
+        C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_AVX_VNNI  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_c9b90.dir/src.cxx.obj -MF CMakeFiles\\cmTC_c9b90.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_c9b90.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-fbx3o2/src.cxx
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-fbx3o2/src.cxx:5:25: error: always_inline function '_mm256_dpbusd_avx_epi32' requires target feature 'avxvnni', but would be inlined into function 'main' that is compiled without support for 'avxvnni'\x0d
+            5 |             __m256i r = _mm256_dpbusd_avx_epi32(z, z, z);\x0d
+              |                         ^\x0d
+        1 error generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:72 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-2u1p5v"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-2u1p5v"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_NEON"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-2u1p5v'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_51a42
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_NEON  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_51a42.dir/src.cxx.obj -MF CMakeFiles\\cmTC_51a42.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_51a42.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-2u1p5v/src.cxx
+        FAILED: CMakeFiles/cmTC_51a42.dir/src.cxx.obj 
+        C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_NEON  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_51a42.dir/src.cxx.obj -MF CMakeFiles\\cmTC_51a42.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_51a42.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-2u1p5v/src.cxx
+        In file included from D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-2u1p5v/src.cxx:2:
+        C:/msys64/mingw64/lib/clang/20/include/arm_neon.h:28:2: error: "NEON intrinsics not available with the soft-float ABI. Please use -mfloat-abi=softfp or -mfloat-abi=hard"
+           28 | #error "NEON intrinsics not available with the soft-float ABI. Please use -mfloat-abi=softfp or -mfloat-abi=hard"
+              |  ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-2u1p5v/src.cxx:3:21: error: unknown type name 'int32x4_t'
+            3 |         int main(){ int32x4_t a = vdupq_n_s32(0); (void)a; return 0; }
+              |                     ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-2u1p5v/src.cxx:3:35: error: use of undeclared identifier 'vdupq_n_s32'\x0d
+            3 |         int main(){ int32x4_t a = vdupq_n_s32(0); (void)a; return 0; }\x0d
+              |                                   ^\x0d
+        3 errors generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:76 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_NEON_DOTPROD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_faf08
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_NEON_DOTPROD  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_faf08.dir/src.cxx.obj -MF CMakeFiles\\cmTC_faf08.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_faf08.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx
+        FAILED: CMakeFiles/cmTC_faf08.dir/src.cxx.obj 
+        C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_NEON_DOTPROD  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_faf08.dir/src.cxx.obj -MF CMakeFiles\\cmTC_faf08.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_faf08.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx
+        In file included from D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx:2:
+        C:/msys64/mingw64/lib/clang/20/include/arm_neon.h:28:2: error: "NEON intrinsics not available with the soft-float ABI. Please use -mfloat-abi=softfp or -mfloat-abi=hard"
+           28 | #error "NEON intrinsics not available with the soft-float ABI. Please use -mfloat-abi=softfp or -mfloat-abi=hard"
+              |  ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx:4:13: error: unknown type name 'int32x4_t'
+            4 |             int32x4_t acc = vdupq_n_s32(0);
+              |             ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx:4:29: error: use of undeclared identifier 'vdupq_n_s32'
+            4 |             int32x4_t acc = vdupq_n_s32(0);
+              |                             ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx:5:13: error: unknown type name 'int8x16_t'
+            5 |             int8x16_t  a  = vdupq_n_s8(0);
+              |             ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx:5:29: error: use of undeclared identifier 'vdupq_n_s8'
+            5 |             int8x16_t  a  = vdupq_n_s8(0);
+              |                             ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx:6:13: error: unknown type name 'int8x16_t'
+            6 |             int8x16_t  b  = vdupq_n_s8(0);
+              |             ^
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx:6:29: error: use of undeclared identifier 'vdupq_n_s8'
+            6 |             int8x16_t  b  = vdupq_n_s8(0);
+              |                             ^\x0d
+        D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-lnqdsf/src.cxx:7:13: error: unknown type name 'int32x4_t'\x0d
+            7 |             int32x4_t  r  = vdotq_s32(acc, a, b);\x0d
+              |             ^\x0d
+        8 errors generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:88 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-p0et5p"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-p0et5p"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_WASM_SIMD"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-p0et5p'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_5c15b
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_WASM_SIMD  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_5c15b.dir/src.cxx.obj -MF CMakeFiles\\cmTC_5c15b.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_5c15b.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-p0et5p/src.cxx
+        FAILED: CMakeFiles/cmTC_5c15b.dir/src.cxx.obj 
+        C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_WASM_SIMD  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_5c15b.dir/src.cxx.obj -MF CMakeFiles\\cmTC_5c15b.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_5c15b.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-p0et5p/src.cxx
+        In file included from D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-p0et5p/src.cxx:2:
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:933:10: error: use of undeclared identifier '__builtin_wasm_any_true_v128'
+          933 |   return __builtin_wasm_any_true_v128((__i8x16)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:939:18: error: use of undeclared identifier '__builtin_wasm_bitselect'
+          939 |   return (v128_t)__builtin_wasm_bitselect((__i32x4)__a, (__i32x4)__b,
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:944:18: error: use of undeclared identifier '__builtin_wasm_abs_i8x16'
+          944 |   return (v128_t)__builtin_wasm_abs_i8x16((__i8x16)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:952:10: error: use of undeclared identifier '__builtin_wasm_all_true_i8x16'
+          952 |   return __builtin_wasm_all_true_i8x16((__i8x16)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:956:10: error: use of undeclared identifier '__builtin_wasm_bitmask_i8x16'
+          956 |   return __builtin_wasm_bitmask_i8x16((__i8x16)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1030:18: error: use of undeclared identifier '__builtin_wasm_avgr_u_i8x16'
+         1030 |   return (v128_t)__builtin_wasm_avgr_u_i8x16((__u8x16)__a, (__u8x16)__b);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1034:18: error: use of undeclared identifier '__builtin_wasm_abs_i16x8'
+         1034 |   return (v128_t)__builtin_wasm_abs_i16x8((__i16x8)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1042:10: error: use of undeclared identifier '__builtin_wasm_all_true_i16x8'
+         1042 |   return __builtin_wasm_all_true_i16x8((__i16x8)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1046:10: error: use of undeclared identifier '__builtin_wasm_bitmask_i16x8'
+         1046 |   return __builtin_wasm_bitmask_i16x8((__i16x8)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1121:18: error: use of undeclared identifier '__builtin_wasm_avgr_u_i16x8'
+         1121 |   return (v128_t)__builtin_wasm_avgr_u_i16x8((__u16x8)__a, (__u16x8)__b);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1125:18: error: use of undeclared identifier '__builtin_wasm_abs_i32x4'
+         1125 |   return (v128_t)__builtin_wasm_abs_i32x4((__i32x4)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1133:10: error: use of undeclared identifier '__builtin_wasm_all_true_i32x4'
+         1133 |   return __builtin_wasm_all_true_i32x4((__i32x4)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1137:10: error: use of undeclared identifier '__builtin_wasm_bitmask_i32x4'
+         1137 |   return __builtin_wasm_bitmask_i32x4((__i32x4)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1192:18: error: use of undeclared identifier '__builtin_wasm_dot_s_i32x4_i16x8'
+         1192 |   return (v128_t)__builtin_wasm_dot_s_i32x4_i16x8((__i16x8)__a, (__i16x8)__b);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1196:18: error: use of undeclared identifier '__builtin_wasm_abs_i64x2'
+         1196 |   return (v128_t)__builtin_wasm_abs_i64x2((__i64x2)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1204:10: error: use of undeclared identifier '__builtin_wasm_all_true_i64x2'
+         1204 |   return __builtin_wasm_all_true_i64x2((__i64x2)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1208:10: error: use of undeclared identifier '__builtin_wasm_bitmask_i64x2'
+         1208 |   return __builtin_wasm_bitmask_i64x2((__i64x2)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1242:18: error: use of undeclared identifier '__builtin_wasm_abs_f32x4'
+         1242 |   return (v128_t)__builtin_wasm_abs_f32x4((__f32x4)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1250:18: error: use of undeclared identifier '__builtin_wasm_sqrt_f32x4'
+         1250 |   return (v128_t)__builtin_wasm_sqrt_f32x4((__f32x4)__a);\x0d
+              |                  ^\x0d
+        fatal error: too many errors emitted, stopping now [-ferror-limit=]\x0d
+        20 errors generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:92 (check_cxx_source_compiles)"
+    directories:
+      source: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-9twz7k"
+      binary: "D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-9twz7k"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/msys64/mingw64/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAS_WASM_SIMD_RELAXED"
+      cached: true
+      stdout: |
+        Change Dir: 'D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-9twz7k'
+        
+        Run Build Command(s): C:/msys64/mingw64/bin/ninja.exe -v cmTC_250d8
+        [1/2] C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_WASM_SIMD_RELAXED  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_250d8.dir/src.cxx.obj -MF CMakeFiles\\cmTC_250d8.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_250d8.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-9twz7k/src.cxx
+        FAILED: CMakeFiles/cmTC_250d8.dir/src.cxx.obj 
+        C:\\msys64\\mingw64\\bin\\clang++.exe -DHAS_WASM_SIMD_RELAXED  -march=native -std=gnu++17 -MD -MT CMakeFiles/cmTC_250d8.dir/src.cxx.obj -MF CMakeFiles\\cmTC_250d8.dir\\src.cxx.obj.d -o CMakeFiles/cmTC_250d8.dir/src.cxx.obj -c D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-9twz7k/src.cxx
+        In file included from D:/C++/Rapfi/build/x64-clang-AVX2/CMakeFiles/CMakeScratch/TryCompile-9twz7k/src.cxx:2:
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:933:10: error: use of undeclared identifier '__builtin_wasm_any_true_v128'
+          933 |   return __builtin_wasm_any_true_v128((__i8x16)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:939:18: error: use of undeclared identifier '__builtin_wasm_bitselect'
+          939 |   return (v128_t)__builtin_wasm_bitselect((__i32x4)__a, (__i32x4)__b,
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:944:18: error: use of undeclared identifier '__builtin_wasm_abs_i8x16'
+          944 |   return (v128_t)__builtin_wasm_abs_i8x16((__i8x16)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:952:10: error: use of undeclared identifier '__builtin_wasm_all_true_i8x16'
+          952 |   return __builtin_wasm_all_true_i8x16((__i8x16)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:956:10: error: use of undeclared identifier '__builtin_wasm_bitmask_i8x16'
+          956 |   return __builtin_wasm_bitmask_i8x16((__i8x16)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1030:18: error: use of undeclared identifier '__builtin_wasm_avgr_u_i8x16'
+         1030 |   return (v128_t)__builtin_wasm_avgr_u_i8x16((__u8x16)__a, (__u8x16)__b);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1034:18: error: use of undeclared identifier '__builtin_wasm_abs_i16x8'
+         1034 |   return (v128_t)__builtin_wasm_abs_i16x8((__i16x8)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1042:10: error: use of undeclared identifier '__builtin_wasm_all_true_i16x8'
+         1042 |   return __builtin_wasm_all_true_i16x8((__i16x8)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1046:10: error: use of undeclared identifier '__builtin_wasm_bitmask_i16x8'
+         1046 |   return __builtin_wasm_bitmask_i16x8((__i16x8)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1121:18: error: use of undeclared identifier '__builtin_wasm_avgr_u_i16x8'
+         1121 |   return (v128_t)__builtin_wasm_avgr_u_i16x8((__u16x8)__a, (__u16x8)__b);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1125:18: error: use of undeclared identifier '__builtin_wasm_abs_i32x4'
+         1125 |   return (v128_t)__builtin_wasm_abs_i32x4((__i32x4)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1133:10: error: use of undeclared identifier '__builtin_wasm_all_true_i32x4'
+         1133 |   return __builtin_wasm_all_true_i32x4((__i32x4)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1137:10: error: use of undeclared identifier '__builtin_wasm_bitmask_i32x4'
+         1137 |   return __builtin_wasm_bitmask_i32x4((__i32x4)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1192:18: error: use of undeclared identifier '__builtin_wasm_dot_s_i32x4_i16x8'
+         1192 |   return (v128_t)__builtin_wasm_dot_s_i32x4_i16x8((__i16x8)__a, (__i16x8)__b);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1196:18: error: use of undeclared identifier '__builtin_wasm_abs_i64x2'
+         1196 |   return (v128_t)__builtin_wasm_abs_i64x2((__i64x2)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1204:10: error: use of undeclared identifier '__builtin_wasm_all_true_i64x2'
+         1204 |   return __builtin_wasm_all_true_i64x2((__i64x2)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1208:10: error: use of undeclared identifier '__builtin_wasm_bitmask_i64x2'
+         1208 |   return __builtin_wasm_bitmask_i64x2((__i64x2)__a);
+              |          ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1242:18: error: use of undeclared identifier '__builtin_wasm_abs_f32x4'
+         1242 |   return (v128_t)__builtin_wasm_abs_f32x4((__f32x4)__a);
+              |                  ^
+        C:/msys64/mingw64/lib/clang/20/include/wasm_simd128.h:1250:18: error: use of undeclared identifier '__builtin_wasm_sqrt_f32x4'
+         1250 |   return (v128_t)__builtin_wasm_sqrt_f32x4((__f32x4)__a);\x0d
+              |                  ^\x0d
+        fatal error: too many errors emitted, stopping now [-ferror-limit=]\x0d
+        20 errors generated.\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

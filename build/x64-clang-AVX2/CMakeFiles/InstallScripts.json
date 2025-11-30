@@ -1,0 +1,15 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/C++/Rapfi/build/x64-clang-AVX2/cmake_install.cmake",
+		"D:/C++/Rapfi/build/x64-clang-AVX2/external/cpptoml/cmake_install.cmake",
+		"D:/C++/Rapfi/build/x64-clang-AVX2/external/cxxopts/cmake_install.cmake",
+		"D:/C++/Rapfi/build/x64-clang-AVX2/external/lz4/cmake_install.cmake",
+		"D:/C++/Rapfi/build/x64-clang-AVX2/external/simde/cmake_install.cmake",
+		"D:/C++/Rapfi/build/x64-clang-AVX2/external/flat.hpp/cmake_install.cmake",
+		"D:/C++/Rapfi/build/x64-clang-AVX2/external/zip/cmake_install.cmake",
+		"D:/C++/Rapfi/build/x64-clang-AVX2/external/libnpy/cmake_install.cmake",
+		"D:/C++/Rapfi/build/x64-clang-AVX2/external/thread-pool/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -81,4 +81,9 @@ typedef HistTable<int16_t, 10692, SIDE_NB, FULL_BOARD_CELL_COUNT, MAIN_HIST_TYPE
 /// It is indexed by color of the previous move, previous move's position and current move's type.
 typedef HistTable<std::pair<Pos, Pattern4>, 0, SIDE_NB, MAX_MOVES> CounterMoveHistory;
 
+/// ContinuationHistory records how well a move performs relative to the move played 2 plies ago.
+/// It is indexed by the side to move, previous move (2 plies ago) and the current move.
+typedef HistTable<int16_t, 10692, SIDE_NB, FULL_BOARD_CELL_COUNT, FULL_BOARD_CELL_COUNT> ContinuationHistory;
+typedef HistTable<int16_t, 10692, SIDE_NB, FULL_BOARD_CELL_COUNT, FULL_BOARD_CELL_COUNT> ContinuationHistory1Ply;
+
 }  // namespace Search

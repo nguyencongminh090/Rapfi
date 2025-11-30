@@ -75,6 +75,8 @@ void ABSearchData::clearData(SearchThread &th)
     singularRoot    = false;
     mainHistory.init(0);
     counterMoveHistory.init(std::make_pair(Pos::NONE, NONE));
+    continuationHistory.init(0);
+    continuationHistory1Ply.init(0);
 }
 
 void ABSearcher::setMemoryLimit(size_t memorySizeKB)
@@ -576,6 +578,10 @@ Value search(Rule         rule,
                           thisThread->rootMoves[0].pv[0],
                           &thisThread->searchDataAs<ABSearchData>()->mainHistory,
                           &thisThread->searchDataAs<ABSearchData>()->counterMoveHistory,
+                          &thisThread->searchDataAs<ABSearchData>()->continuationHistory,
+                          &thisThread->searchDataAs<ABSearchData>()->continuationHistory1Ply,
+                          (ss - 2)->currentMove,
+                          (ss - 1)->currentMove
                       });
 
         // Refresh root move index in balance2Moves
@@ -933,6 +939,10 @@ moves_loop:
                       ttMove,
                       &searchData->mainHistory,
                       &searchData->counterMoveHistory,
+                      &searchData->continuationHistory,
+                      &searchData->continuationHistory1Ply,
+                      (ss - 2)->currentMove,
+                      (ss - 1)->currentMove
                   });
 
     // Step 11. Loop through all legal moves until no moves remain
@@ -1147,7 +1157,7 @@ moves_loop:
             }
 
             // Update statScore of this node
-            ss->statScore = statScore(searchData->mainHistory, self, move);
+            ss->statScore = statScore(searchData->mainHistory, searchData->continuationHistory, searchData->continuationHistory1Ply, self, move, (ss - 2)->currentMove, (ss - 1)->currentMove);
 
             // Decrease/increase reduction for moves with a good/bad history (~9 elo)
             r -= extensionFromStatScore(ss->statScore, depth);

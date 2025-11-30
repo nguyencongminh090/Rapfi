@@ -74,6 +74,8 @@ private:
         POLICY       = 0b100,
         MAIN_HISTORY = 0b1000,
         COUNTER_MOVE = 0b10000,
+        CONTINUATION_HISTORY = 0b100000,
+        CONTINUATION_HISTORY_1PLY = 0b1000000,
     };
 
     template <PickType T, typename Pred>
@@ -86,6 +88,10 @@ private:
     const Board              &board;
     const MainHistory        *mainHistory;
     const CounterMoveHistory *counterMoveHistory;
+    const ContinuationHistory *continuationHistory;
+    const ContinuationHistory1Ply *continuationHistory1Ply;
+    Pos                       prevMove;
+    Pos                       prevMoveOpp;
     int8_t                    stage;
     Rule                      rule;
     Pos                       ttMove;
@@ -113,6 +119,10 @@ struct MovePicker::ExtraArgs<MovePicker::MAIN>
     Pos                 ttMove;
     MainHistory        *mainHistory;
     CounterMoveHistory *counterMoveHistory;
+    ContinuationHistory *continuationHistory;
+    ContinuationHistory1Ply *continuationHistory1Ply;
+    Pos                 prevMove;
+    Pos                 prevMoveOpp;
     bool                useNormalizedPolicy  = false;
     float               normalizedPolicyTemp = 1.0f;
 };

@@ -86,9 +86,9 @@ struct alignas(64) Weight
         FCWeight<4, ValueDim>                         value_l3;
 
         // 6  Policy output linear
-        float policy_output_weight[16];
+        alignas(32) float policy_output_weight[16];
         float policy_output_bias;
-        char  __padding_to_64bytes_1[44];
+        char  __padding_to_64bytes_1[28];
     } buckets[NumHeadBucket];
 };
 
@@ -97,7 +97,7 @@ static_assert(offsetof(Weight, feature_dwconv_weight) % 64 == 0);
 static_assert(offsetof(Weight, buckets) % 64 == 0);
 static_assert(offsetof(Weight::HeadBucket, value_corner) % 64 == 0);
 static_assert(offsetof(Weight::HeadBucket, value_l1) % 64 == 0);
-static_assert(offsetof(Weight::HeadBucket, policy_output_weight) % 16 == 0);
+static_assert(offsetof(Weight::HeadBucket, policy_output_weight) % 32 == 0);
 static_assert(sizeof(Weight::HeadBucket) % 64 == 0);
 
 class Accumulator

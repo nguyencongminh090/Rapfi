@@ -34,17 +34,17 @@ struct SearchStack
     Pos *const pv;
     const int  ply;
     int        moveCount;
-    Depth      extraExtension;  /// cumulative extension depth that larger than one ply
-    int        dbValueDepth;
-    int        statScore;
-    Value      staticEval;
-    Pos        currentMove;
-    Pos        skipMove;
-    Pos        killers[2];
-    Pattern4   moveP4[SIDE_NB];
-    int16_t    numNullMoves;
-    bool       ttPv;
-    bool       dbChildWritten;
+    Depth      extraExtension = 0;  /// cumulative extension depth that larger than one ply
+    int        dbValueDepth = 0;
+    int        statScore = 0;
+    Value      staticEval = VALUE_NONE;
+    Pos        currentMove = Pos::NONE;
+    Pos        skipMove = Pos::NONE;
+    Pos        killers[2] = {Pos::NONE, Pos::NONE};
+    Pattern4   moveP4[SIDE_NB] = {NONE, NONE};
+    int16_t    numNullMoves = 0;
+    bool       ttPv = false;
+    bool       dbChildWritten = false;
 
     /// Append current move and to the end of child PV.
     void updatePv(Pos move)
