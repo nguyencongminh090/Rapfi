@@ -48,3 +48,8 @@
 265	15987	7861734577334752	CMakeFiles/rapfi.dir/search/searchthread.cpp.obj	50ea8c198ac509bd
 59986	76599	7861031351848181	CMakeFiles/rapfi.dir/command/opengen.cpp.obj	f7ac091bcd5e86ad
 11341	41178	7861734691715031	CMakeFiles/rapfi.dir/config.cpp.obj	7d4fee2ba928c68d
+33	7583	7862178406175955	CMakeFiles/rapfi.dir/search/movepick.cpp.obj	d991751798e881b8
+25	9459	7862178406079860	CMakeFiles/rapfi.dir/command/gomocup.cpp.obj	839565b210df060b
+41	11690	7862178406254093	CMakeFiles/rapfi.dir/search/ab/search.cpp.obj	73c8ac05a3dc6654
+49	6377	7862179541270374	CMakeFiles/rapfi.dir/search/ab/search.cpp.obj	73c8ac05a3dc6654
+6378	6938	7862179604569819	pbrain-rapfi.exe	d2b6f2b77bd81cec

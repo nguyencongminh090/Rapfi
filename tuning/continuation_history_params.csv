@@ -1,0 +1,4 @@
+ContinuationHistoryScale,1,0,4,0.2,0.0020
+ContinuationHistory1PlyScale,1,0,4,0.2,0.0020
+ContinuationHistoryMovePickScale,256,1,1024,25,0.0020
+ContinuationHistory1PlyMovePickScale,256,1,1024,25,0.0020

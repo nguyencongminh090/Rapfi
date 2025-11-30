@@ -258,10 +258,8 @@ constexpr int policyPruningScore(Depth d)
 /// Compute stat score of current move from history table.
 inline int statScore(const MainHistory &mainHistory, const ContinuationHistory &continuationHistory, const ContinuationHistory1Ply &continuationHistory1Ply, Color stm, Pos move, Pos prevMove, Pos prevMoveOpp)
 {
-    static int ContinuationHistoryScale = 1;
-    static int ContinuationHistory1PlyScale = 1;
-    TUNE(ContinuationHistoryScale, 0, 4);
-    TUNE(ContinuationHistory1PlyScale, 0, 4);
+    extern int ContinuationHistoryScale;
+    extern int ContinuationHistory1PlyScale;
 
     return mainHistory[stm][move][HIST_ATTACK]                // history attack score
            + mainHistory[stm][move][HIST_QUIET] * 780 / 1024  // history quiet score

@@ -82,9 +82,16 @@ void markFirstMoveOneHot(ScoredMove *curMove, ScoredMove *endMove)
         m->policy = 0.0f;
 }
 
+
+
 }  // namespace
 
 namespace Search {
+
+static int ContinuationHistoryMovePickScale = 256;
+static int ContinuationHistory1PlyMovePickScale = 256;
+TUNE(ContinuationHistoryMovePickScale, 1, 1024);
+TUNE(ContinuationHistory1PlyMovePickScale, 1, 1024);
 
 /// MovePicker constructor at the root node.
 /// Generate all legal moves for current side to move.
@@ -329,14 +336,10 @@ void MovePicker::scoreAllMoves()
         }
 
         if (bool(Type & CONTINUATION_HISTORY) && continuationHistory && board.isInBoard(prevMove)) {
-            static int ContinuationHistoryMovePickScale = 256;
-            TUNE(ContinuationHistoryMovePickScale, 1, 1024);
             m.score += (*continuationHistory)[self][prevMove][m.pos] / ContinuationHistoryMovePickScale;
         }
 
         if (bool(Type & CONTINUATION_HISTORY_1PLY) && continuationHistory1Ply && board.isInBoard(prevMoveOpp)) {
-            static int ContinuationHistory1PlyMovePickScale = 256;
-            TUNE(ContinuationHistory1PlyMovePickScale, 1, 1024);
             m.score += (*continuationHistory1Ply)[self][prevMoveOpp][m.pos] / ContinuationHistory1PlyMovePickScale;
         }
 
