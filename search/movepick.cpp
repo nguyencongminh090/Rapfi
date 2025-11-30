@@ -17,6 +17,7 @@
  */
 
 #include "movepick.h"
+#include "../tuning/tunemap.h"
 
 #include "../eval/evaluator.h"
 #include "../game/board.h"
@@ -328,11 +329,15 @@ void MovePicker::scoreAllMoves()
         }
 
         if (bool(Type & CONTINUATION_HISTORY) && continuationHistory && board.isInBoard(prevMove)) {
-            m.score += (*continuationHistory)[self][prevMove][m.pos] / 256;
+            static int ContinuationHistoryMovePickScale = 256;
+            TUNE(ContinuationHistoryMovePickScale, 1, 1024);
+            m.score += (*continuationHistory)[self][prevMove][m.pos] / ContinuationHistoryMovePickScale;
         }
 
         if (bool(Type & CONTINUATION_HISTORY_1PLY) && continuationHistory1Ply && board.isInBoard(prevMoveOpp)) {
-            m.score += (*continuationHistory1Ply)[self][prevMoveOpp][m.pos] / 256;
+            static int ContinuationHistory1PlyMovePickScale = 256;
+            TUNE(ContinuationHistory1PlyMovePickScale, 1, 1024);
+            m.score += (*continuationHistory1Ply)[self][prevMoveOpp][m.pos] / ContinuationHistory1PlyMovePickScale;
         }
 
 

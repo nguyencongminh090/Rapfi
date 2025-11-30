@@ -19,6 +19,7 @@
 #pragma once
 
 #include "../../core/types.h"
+#include "../../tuning/tunemap.h"
 #include "history.h"
 
 #include <array>
@@ -257,10 +258,15 @@ constexpr int policyPruningScore(Depth d)
 /// Compute stat score of current move from history table.
 inline int statScore(const MainHistory &mainHistory, const ContinuationHistory &continuationHistory, const ContinuationHistory1Ply &continuationHistory1Ply, Color stm, Pos move, Pos prevMove, Pos prevMoveOpp)
 {
+    static int ContinuationHistoryScale = 1;
+    static int ContinuationHistory1PlyScale = 1;
+    TUNE(ContinuationHistoryScale, 0, 4);
+    TUNE(ContinuationHistory1PlyScale, 0, 4);
+
     return mainHistory[stm][move][HIST_ATTACK]                // history attack score
            + mainHistory[stm][move][HIST_QUIET] * 780 / 1024  // history quiet score
-           + continuationHistory[stm][prevMove][move]         // continuation history score (2-ply)
-           + continuationHistory1Ply[stm][prevMoveOpp][move]  // continuation history score (1-ply)
+           + continuationHistory[stm][prevMove][move] * ContinuationHistoryScale        // continuation history score (2-ply)
+           + continuationHistory1Ply[stm][prevMoveOpp][move] * ContinuationHistory1PlyScale // continuation history score (1-ply)
            - 3322;
 }
 
