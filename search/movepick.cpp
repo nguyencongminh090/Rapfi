@@ -88,12 +88,6 @@ void markFirstMoveOneHot(ScoredMove *curMove, ScoredMove *endMove)
 
 namespace Search {
 
-static int ContinuationHistoryMovePickScale = 256;
-static int ContinuationHistory1PlyMovePickScale = 256;
-TUNE(ContinuationHistoryMovePickScale, 1, 1024);
-TUNE(ContinuationHistory1PlyMovePickScale, 1, 1024);
-
-/// MovePicker constructor at the root node.
 /// Generate all legal moves for current side to move.
 template <>
 MovePicker::MovePicker(Rule rule, const Board &board, ExtraArgs<MovePicker::ROOT> args)
@@ -336,11 +330,11 @@ void MovePicker::scoreAllMoves()
         }
 
         if (bool(Type & CONTINUATION_HISTORY) && continuationHistory && board.isInBoard(prevMove)) {
-            m.score += (*continuationHistory)[self][prevMove][m.pos] / ContinuationHistoryMovePickScale;
+            m.score += (*continuationHistory)[self][prevMove][m.pos] / 383;
         }
 
         if (bool(Type & CONTINUATION_HISTORY_1PLY) && continuationHistory1Ply && board.isInBoard(prevMoveOpp)) {
-            m.score += (*continuationHistory1Ply)[self][prevMoveOpp][m.pos] / ContinuationHistory1PlyMovePickScale;
+            m.score += (*continuationHistory1Ply)[self][prevMoveOpp][m.pos] / 389;
         }
 
 

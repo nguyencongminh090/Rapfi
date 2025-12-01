@@ -65,14 +65,7 @@ Value vcfdefend(Board &board, SearchStack *ss, Value alpha, Value beta, Depth de
 
 }  // namespace
 
-namespace Search::AB {
 
-int ContinuationHistoryScale = 1;
-int ContinuationHistory1PlyScale = 1;
-TUNE(ContinuationHistoryScale, 0, 4);
-TUNE(ContinuationHistory1PlyScale, 0, 4);
-
-} // namespace Search::AB
 
 void ABSearchData::clearData(SearchThread &th)
 {
